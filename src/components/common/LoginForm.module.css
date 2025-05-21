@@ -1,0 +1,73 @@
+.pagina {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 400px;
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.entrada {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.entrada:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+.boton {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.boton:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.boton:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  text-align: center;
+}
