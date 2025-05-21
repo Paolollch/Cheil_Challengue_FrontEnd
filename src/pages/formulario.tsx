@@ -49,6 +49,7 @@ export default function Formulario() {
 
       alert('Producto creado correctamente');
       setShowProductoModal(false);
+      window.location.reload();
     } catch (error) {
       console.error('Error al crear producto:', error);
       alert('Hubo un error al crear el producto');
